@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args){
-        PaginationHelper<Character> helper = new PaginationHelper(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f'), 4);
+        PaginationHelper<Character> helper = new PaginationHelper<>(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f'), 4);
         System.out.println(helper.pageCount()); //should == 2
         System.out.println(helper.itemCount()); //should == 6
         System.out.println(helper.pageItemCount(0)); //should == 4
